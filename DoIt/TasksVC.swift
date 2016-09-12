@@ -14,6 +14,8 @@ class TasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tasks: [Task] = []
     
+    var selectedIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +39,14 @@ class TasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             cell.textLabel?.text = "\(task.name) ❗️"
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedIndex = indexPath.row
+        
+        let task = tasks[indexPath.row]
+        performSegue(withIdentifier: "selectTaskSegue", sender: task)
     }
     
     func makeTasks() -> [Task] {
@@ -63,8 +73,16 @@ class TasksVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nextVC = segue.destination as! CreateTaskVC
-        nextVC.previousVC = self
+        
+        if segue.identifier == "addSegue" {
+            let nextVC = segue.destination as! CreateTaskVC
+            nextVC.previousVC = self
+        } else if segue.identifier == "selectTaskSegue" {
+            let nextVC = segue.destination as! CompleteTaskVC
+            nextVC.task = sender as! Task
+            nextVC.previousVC = self
+        }
+        
         
     }
 

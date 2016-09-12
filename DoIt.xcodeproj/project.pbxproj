@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6091DFD41D8738CD00F25B63 /* CompleteTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091DFD31D8738CD00F25B63 /* CompleteTaskVC.swift */; };
 		60C466591D7F5597007D613B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C466581D7F5597007D613B /* AppDelegate.swift */; };
 		60C4665B1D7F5597007D613B /* TasksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C4665A1D7F5597007D613B /* TasksVC.swift */; };
 		60C4665E1D7F5597007D613B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C4665C1D7F5597007D613B /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6091DFD31D8738CD00F25B63 /* CompleteTaskVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteTaskVC.swift; sourceTree = "<group>"; };
 		60C466551D7F5597007D613B /* DoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C466581D7F5597007D613B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60C4665A1D7F5597007D613B /* TasksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksVC.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				60C466671D7F5597007D613B /* Info.plist */,
 				60C4665F1D7F5597007D613B /* DoIt.xcdatamodeld */,
 				60C4666D1D7F5959007D613B /* Task.swift */,
+				6091DFD31D8738CD00F25B63 /* CompleteTaskVC.swift */,
 			);
 			path = DoIt;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			files = (
 				60C4666E1D7F5959007D613B /* Task.swift in Sources */,
 				60C466611D7F5597007D613B /* DoIt.xcdatamodeld in Sources */,
+				6091DFD41D8738CD00F25B63 /* CompleteTaskVC.swift in Sources */,
 				60C4665B1D7F5597007D613B /* TasksVC.swift in Sources */,
 				60C466701D7F5EF9007D613B /* CreateTaskVC.swift in Sources */,
 				60C466591D7F5597007D613B /* AppDelegate.swift in Sources */,
@@ -314,6 +318,7 @@
 				60C4666C1D7F5597007D613B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
